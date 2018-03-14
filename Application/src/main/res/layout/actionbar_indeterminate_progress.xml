@@ -13,11 +13,18 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LLayout xmlns:android="http://schemas.android.com/apk/res/android"
              android:layout_height="wrap_content"
              android:layout_width="56dp"
              android:minWidth="56dp">
     <ProgressBar android:layout_width="32dp"
                  android:layout_height="32dp"
                  android:layout_gravity="center"/>
-</FrameLayout>
+    <Button
+        android:id="@+id/sendpage"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:onClick="sendclick"
+        android:textSize="14dp" />
+
+</LLayout>

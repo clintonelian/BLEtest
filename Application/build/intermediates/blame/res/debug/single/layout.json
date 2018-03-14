@@ -10,5 +10,9 @@
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\BluetoothLeGatt1\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\gatt_services_characteristics.xml",
         "source": "C:\\Users\\Admin\\AndroidStudioProjects\\BluetoothLeGatt1\\Application\\src\\main\\res\\layout\\gatt_services_characteristics.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\BluetoothLeGatt1\\Application\\build\\intermediates\\res\\merged\\debug\\layout\\sendlayout.xml",
+        "source": "C:\\Users\\Admin\\AndroidStudioProjects\\BluetoothLeGatt1\\Application\\src\\main\\res\\layout\\sendlayout.xml"
     }
 ]

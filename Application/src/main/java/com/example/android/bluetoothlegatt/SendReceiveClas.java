@@ -35,29 +35,26 @@ public class SendReceiveClas extends Activity {
 //    }
 
 
-
+    DeviceControlActivity DCActivity = new DeviceControlActivity();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.button_control);
+        setContentView(R.layout.sendlayout);
     }
 
     public void onClickWrite (View v) {
         EditText mCommand = (EditText)findViewById(R.id.sendvalue);
                 String val=mCommand.getText().toString();
-//                bluetoothGattCharacteristicHM_10.setValue("$" +val+"#"+"\n" );
-//                mBluetoothLeService.writeCharacteristic(bluetoothGattCharacteristicHM_10);
-//                mBluetoothLeService.setCharacteristicNotification(bluetoothGattCharacteristicHM_10, true);
+                DCActivity.bluetoothGattCharacteristicHM_10.setValue("$" +val+"#"+"\n" );
+                DCActivity.mBluetoothLeService.writeCharacteristic(DCActivity.bluetoothGattCharacteristicHM_10);
+                DCActivity.mBluetoothLeService.setCharacteristicNotification(DCActivity.bluetoothGattCharacteristicHM_10, true);
 
-        DeviceControlActivity.setBTGattCharacteristic.setValue("$" +val+"#"+"\n" );
-        DeviceControlActivity.setBTLeService.writeCharacteristic(BTGattCharacteristic);
-        DeviceControlActivity.setBTLeService.setCharacteristicNotification(BTGattCharacteristic, true);
+//        DCActivity.setBTGattCharacteristic.setValue("$" +val+"#"+"\n" );
+//        DCActivity.setBTLeService.writeCharacteristic(DCActivity.BTGattCharacteristic);
+//        DCActivity.setBTLeService.setCharacteristicNotification(DCActivity.BTGattCharacteristic, true);
 
     };
 
-
-
-    getBTGattCharacteristic();
 
 //    public void onClickRead(View v) {
 //

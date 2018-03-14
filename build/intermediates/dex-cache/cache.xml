@@ -2,46 +2,22 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\user\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="D:\AndroidStudioExampleProjects\BluetoothLeGatt1\Application\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-663270283fa374e7034b14be5a187e68c8881c63.jar" />
+        is-multidex="true"
+        jar="C:\Users\Admin\AndroidStudioProjects\BluetoothLeGatt1\Application\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Admin\AndroidStudioProjects\BluetoothLeGatt1\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_6c726bc2f993d85bec0506d4dd2fb59fb98a2e15\classes.dex" />
     </item>
     <item
-        jar="D:\AndroidStudioExampleProjects\BluetoothLeGatt1\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="D:\AndroidStudioExampleProjects\BluetoothLeGatt1\Application\build\intermediates\pre-dexed\debug\classes-9c84c5c8bc2460442c285679d6fe50c3da25061f.jar" />
-    </item>
-    <item
-        jar="D:\AndroidStudioExampleProjects\BluetoothLeGatt1\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="1a57337a520bf40b9ad1e074cb780527dffa1aac">
-        <dex dex="D:\AndroidStudioExampleProjects\BluetoothLeGatt1\Application\build\intermediates\pre-dexed\debug\classes-7145f05bdf145c9e035894282817f6087a8030e9.jar" />
-    </item>
-    <item
-        jar="D:\AndroidStudioExampleProjects\BluetoothLeGatt1\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="D:\AndroidStudioExampleProjects\BluetoothLeGatt1\Application\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-e512917130bcb1792c3b1afdebf2b273e4aab084.jar" />
-    </item>
-    <item
-        jar="D:\AndroidStudioExampleProjects\BluetoothLeGatt1\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.0\jars\libs\internal_impl-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="076c7d9e22cc325b8008ff799e0c06dfb8eefdf3">
-        <dex dex="D:\AndroidStudioExampleProjects\BluetoothLeGatt1\Application\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-8863feeef230a917d438bd5e86879b9381fc42b6.jar" />
-    </item>
-    <item
-        jar="D:\AndroidStudioExampleProjects\BluetoothLeGatt1\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="d96886efea7cc74fbb3abd0e3b51d5638fc57be0">
-        <dex dex="D:\AndroidStudioExampleProjects\BluetoothLeGatt1\Application\build\intermediates\pre-dexed\debug\classes-232ed1117ab39363b7b294208539e58c46e8412b.jar" />
+        is-multidex="true"
+        jar="C:\Users\Admin\AndroidStudioProjects\BluetoothLeGatt1\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.2"
+        sha1="55c3e38d8d99a8b8ca7c56c6281e05f574ec7bcb">
+        <dex dex="C:\Users\Admin\AndroidStudioProjects\BluetoothLeGatt1\Application\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_4b03a1688b601cb2508d294f00064c05d97e5a2d\classes.dex" />
     </item>
 
 </items>

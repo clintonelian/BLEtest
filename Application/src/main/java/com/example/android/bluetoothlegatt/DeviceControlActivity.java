@@ -57,7 +57,7 @@ public class DeviceControlActivity extends Activity {
     private String mDeviceName;
     private String mDeviceAddress;
     private ExpandableListView mGattServicesList;
-    private BluetoothLeService mBluetoothLeService;
+    public BluetoothLeService mBluetoothLeService;
 
     private ArrayList<ArrayList<BluetoothGattCharacteristic>> mGattCharacteristics =
             new ArrayList<ArrayList<BluetoothGattCharacteristic>>();
@@ -69,26 +69,26 @@ public class DeviceControlActivity extends Activity {
 
 //- Add bluetoothGattCharacteristicHM_10 to keep track of BluetoothGattCharacteristic object of HM-10.
 
-    private BluetoothGattCharacteristic bluetoothGattCharacteristicHM_10;
+    public BluetoothGattCharacteristic bluetoothGattCharacteristicHM_10;
 
-    //getter
-    public BluetoothGattCharacteristic getBTGattCharacteristic(){
-        return bluetoothGattCharacteristicHM_10;
-    }
-
-    //setter
-    public void setBTGattCharacteristic(BluetoothGattCharacteristic BTGattCHar) {
-        this.bluetoothGattCharacteristicHM_10 = BTGattCHar;
-    }
-    //getter
-    public BluetoothLeService getmBTLeService(){
-        return mBluetoothLeService;
-    }
-
-    // setter
-    public void setBTLeService (BluetoothLeService BTLeServ) {
-        this.mBluetoothLeService = BTLeServ;
-    }
+//    //getter
+//    public BluetoothGattCharacteristic getBTGattCharacteristic(){
+//        return bluetoothGattCharacteristicHM_10;
+//    }
+//
+//    //setter
+//    public void setBTGattCharacteristic(BluetoothGattCharacteristic BTGattCHar) {
+//        this.bluetoothGattCharacteristicHM_10 = BTGattCHar;
+//    }
+//    //getter
+//    public BluetoothLeService getmBTLeService(){
+//        return mBluetoothLeService;
+//    }
+//
+//    // setter
+//    public void setBTLeService (BluetoothLeService BTLeServ) {
+//        this.mBluetoothLeService = BTLeServ;
+//    }
 
 
 
@@ -217,10 +217,6 @@ public class DeviceControlActivity extends Activity {
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
     }
 
-    public void sendreceiveclick(View v){
-        Intent ia = new Intent(this, SendReceiveClas.class);
-        startActivity(ia);
-    }
 
 
 
@@ -366,4 +362,10 @@ public class DeviceControlActivity extends Activity {
         intentFilter.addAction(BluetoothLeService.ACTION_DATA_AVAILABLE);
         return intentFilter;
     }
+
+    public void sendclick(View v){
+        Intent ia = new Intent(this, SendReceiveClas.class);
+        startActivity(ia);
+    }
+
 }
