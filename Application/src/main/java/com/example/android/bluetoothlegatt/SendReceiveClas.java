@@ -49,10 +49,6 @@ public class SendReceiveClas extends Activity {
                 DCActivity.mBluetoothLeService.writeCharacteristic(DCActivity.bluetoothGattCharacteristicHM_10);
                 DCActivity.mBluetoothLeService.setCharacteristicNotification(DCActivity.bluetoothGattCharacteristicHM_10, true);
 
-//        DCActivity.setBTGattCharacteristic.setValue("$" +val+"#"+"\n" );
-//        DCActivity.setBTLeService.writeCharacteristic(DCActivity.BTGattCharacteristic);
-//        DCActivity.setBTLeService.setCharacteristicNotification(DCActivity.BTGattCharacteristic, true);
-
     };
 
 
