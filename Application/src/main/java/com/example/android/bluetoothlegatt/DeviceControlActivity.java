@@ -67,8 +67,11 @@ public class DeviceControlActivity extends Activity {
     private final String LIST_NAME = "NAME";
     private final String LIST_UUID = "UUID";
 
+    /**DARI TUTORIAL
+     * http://android-er.blogspot.co.id/2015/12/android-send-data-to-bluetooth-le.html
+     * LINE 76
+     * */
 //- Add bluetoothGattCharacteristicHM_10 to keep track of BluetoothGattCharacteristic object of HM-10.
-
     public BluetoothGattCharacteristic bluetoothGattCharacteristicHM_10;
 
 //    //getter
@@ -137,6 +140,10 @@ public class DeviceControlActivity extends Activity {
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
                 displayData(intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
 
+                /**DARI TUTORIAL
+                 * http://android-er.blogspot.co.id/2015/12/android-send-data-to-bluetooth-le.html
+                 * LINE 147 SAMPAU 160
+                 * */
                 //Echo back received data, with something inserted
                 //Echo back data to bluetoothGattCharacteristicHM_10 in BroadcastReceiver.
                 final byte[] rxBytes = bluetoothGattCharacteristicHM_10.getValue();
@@ -330,10 +337,13 @@ public class DeviceControlActivity extends Activity {
                 currentCharaData.put(LIST_UUID, uuid);
                 gattCharacteristicGroupData.add(currentCharaData);
 
+                /**DARI TUTORIAL
+                 * http://android-er.blogspot.co.id/2015/12/android-send-data-to-bluetooth-le.html
+                 * LINE 345 SAMPAU 347
+                 * */
                 //Check if it is "HM_10"
                 if(uuid.equals(SampleGattAttributes.HM_10)){
                     bluetoothGattCharacteristicHM_10 = gattService.getCharacteristic(UUID_HM_10);
-
                 }
             }
             mGattCharacteristics.add(charas);

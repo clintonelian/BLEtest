@@ -63,6 +63,8 @@ public class BluetoothLeService extends Service {
     public final static String EXTRA_DATA =
             "com.example.bluetooth.le.EXTRA_DATA";
 
+    /**DARI TUTORIAL http://android-er.blogspot.co.id/2015/12/android-send-data-to-bluetooth-le.html
+     * */
     public final static UUID UUID_HEART_RATE_MEASUREMENT =
             UUID.fromString(SampleGattAttributes.HM_10);
 
@@ -151,7 +153,10 @@ public class BluetoothLeService extends Service {
             }
         }
         */
-
+        /**DARI TUTORIAL
+         * http://android-er.blogspot.co.id/2015/12/android-send-data-to-bluetooth-le.html
+         * LINE 158 SAMPAU 172
+         * */
         Log.w(TAG, "broadcastUpdate()");
 
         final byte[] data = characteristic.getValue();
@@ -336,6 +341,10 @@ public class BluetoothLeService extends Service {
         return mBluetoothGatt.getServices();
     }
 
+    /**DARI TUTORIAL
+     * http://android-er.blogspot.co.id/2015/12/android-send-data-to-bluetooth-le.html
+     * LINE 343 SAMPAU 346
+     * */
     public void writeCharacteristic(BluetoothGattCharacteristic characteristic) {
         mBluetoothGatt.writeCharacteristic(characteristic);
     }

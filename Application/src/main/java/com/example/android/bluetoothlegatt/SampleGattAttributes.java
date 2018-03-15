@@ -22,6 +22,14 @@ import java.util.HashMap;
  * This class includes a small subset of standard GATT attributes for demonstration purposes.
  */
 public class SampleGattAttributes {
+    /**DARI TUTORIAL
+     * http://android-er.blogspot.co.id/2015/12/android-send-data-to-bluetooth-le.html
+     * Refer to the post "Test HM-10 Bluetooth 4.0 BLE module with FTDI adapter", the default service UUID and Characteristic of HM-10 are:
+     - Service UUID: 0xFFE0
+     - Characteristic: 0xFFE1
+     Edit SampleGattAttributes.java of BluetoothLeGatt sample to match 0xffe0 and 0xff1, and correct BluetoothLeService.java accordingly. Now, the sample app can recognize HM-10.
+     * LINE 34,39,42
+     * */
     private static HashMap<String, String> attributes = new HashMap();
     public static String HM_10 = "0000ffe1-0000-1000-8000-00805f9b34fb";
     public static String CLIENT_CHARACTERISTIC_CONFIG = "00002902-0000-1000-8000-00805f9b34fb";
